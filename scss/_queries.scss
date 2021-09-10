@@ -1,0 +1,123 @@
+/* INICIO MEDIA QUERIES  */
+
+@media screen and (max-width: 991px) {
+    .headerSticky__nav {
+      justify-content: flex-end;
+    }
+    .buscador {
+      left: -30px;
+    }
+  
+    .main__textoImagen {
+      bottom: 200px;
+      line-height: 30px;
+       
+      a:link {
+        font-size: 15px;
+      }
+    
+      a:hover {
+        padding: 4px 4px;
+      }
+    
+      .main__primeraLinea {
+        color: #0f6184;
+        font-weight: bolder;
+        font-size: 30px !important;
+        text-shadow: 2px 2px 1px black;
+      }
+    
+      .main__segundaLinea {
+        color: white;
+        font-weight: bolder;
+        font-size: 30px !important;
+        text-shadow: 1px 1px 3px black;
+        margin-bottom: 10px;
+      }
+    }
+    .productos__categorias {
+    nav {
+      ul {
+          padding-left: 0px;
+      }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .buscador {
+      left: 300px;
+    }
+  }
+  @media screen and (max-width: 1764px) {
+    .buscador {
+      left: 200px;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .buscador {
+      left: 150px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .buscador {
+      left: 70px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .buscador {
+      left: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .main__image {
+      display: flex;
+    }
+  
+    .main__image img {
+      text-align: center;
+      align-self: center;
+     width: 300px;
+    }
+    .productos__categorias {
+      display: none;
+    }
+    .botonWhatsapp {
+      right: 25px;
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+    .carteles__cartel img {
+      width: 100%;
+    }
+    .botonWhatsapp {
+      right: 25px;
+      bottom: 15px;
+      width: 170px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .footer__left {
+      font-size: 10px;
+    }
+    .footer__right {
+      font-size: 10px;
+    }
+    .headerFixed__nav {
+      a {
+        padding: 5px;
+      }
+    }
+    .headerFixed__redes {
+      justify-content: flex-end;
+    }
+    .headerFixed__iconosRedes {
+      margin: 1px;
+    }
+  }
+    
+  /* FIN MEDIA QUERIES */

@@ -1,0 +1,35 @@
+/* Variables */
+$fondo: linear-gradient(to right, #c2d7e0, #4fbebb);
+$primary: #0f6184;
+
+.productos {
+    background-image: $fondo;
+    h1 {
+        color: white;
+        background-color: $primary;
+        font-size: 140%;
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+    }
+    nav {
+        background-color: white;
+        a {
+            color: black;
+            border-bottom: solid #4fbebb 1px;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-left: 30px;
+        };
+    }
+    .productos__producto {
+        img:hover {
+            transform:scale(1.03,1.03);
+            transition: 0.3s;
+        }
+    }
+}

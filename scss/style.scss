@@ -1,0 +1,133 @@
+/* Variables */
+$fondo: linear-gradient(to right, #c2d7e0, #4fbebb);
+$primary: #0f6184;
+
+/* Imports */
+@import "home";
+@import "sobreNosotros";
+@import "contacto";
+@import "personalizadas";
+@import "nuestrosProductos";
+@import "../bootstrap/scss/bootstrap.scss";
+
+// GENERAL
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.botonWhatsapp {
+  position: absolute;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 1;
+  width: 250px;
+}
+
+/* INICIO ENCABEZADO */
+
+.headerFixed--background {
+  background-image: $fondo;
+}
+.headerFixed__nav {
+  a:hover {
+    font-weight: bolder;
+    transition: 0s;
+  }
+}
+
+.headerFixed__nav--flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerFixed__redes--flexCenter {
+  @extend .headerFixed__nav--flexCenter;
+}
+.headerFixed__redes {
+  img:hover {
+    transform:scale(1.03,1.03);
+    transition: 0s;
+  }
+}
+
+.headerFixed__iconosRedes--margin {
+    margin: 5px;
+}
+.headerFixed__link--margin {
+    margin: 5px;
+}
+.headerSticky__nav {
+  @extend .headerFixed__nav--flexCenter; 
+    a:hover {
+    font-weight: bolder;
+    transition: 0s;
+  }
+}
+
+.headerSticky__buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -20%;
+    top: 9px;
+
+  input.headerSticky__textoBoton {
+    width: 60%;
+    background-color: #c2d7e0;
+    border: none;
+  }
+  input.headerSticky__boton {
+    background-color: #0f6184;
+    border: none;
+    padding: 0px 5%;
+    color: white;
+    margin-left: -5px;
+  }
+  input.headerSticky__boton:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 1px 6%;
+  }
+  input {
+    transition: all 0.3s;
+  }
+  input:focus {
+    width: 50%;
+    font-size: 15px;
+  }
+
+}
+
+/* FIN ENCABEZADO */
+
+/* INICIO PIE DE PAGINA */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  .footer__left {
+    display: flex;
+    padding-right: 50px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+  }
+  .footer__right {
+    background-color: white;
+  }
+}
+/* FIN PIE DE PAGINA */
+
+@import "queries";
+
+
+

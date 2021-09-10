@@ -1,0 +1,112 @@
+/* Variables */
+$fondo: linear-gradient(to right, #c2d7e0, #4fbebb);
+$carousel-control-color: #0f6184;
+$carousel-control-opacity: .7;
+$carousel-indicator-active-bg: #0f6184;
+
+/* INICIO INDEX.HTML */
+
+.main--background {
+    background-image: $fondo;
+  }
+  
+  
+  .main__textoImagen {
+    position: relative;
+    bottom: 230px;
+    line-height: 30px;
+    color: #0f6184;
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    
+    a:link {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding: 3px 6px;
+      background-color: #0f6184;
+      text-transform: capitalize;
+      transition: 0.1s;
+      border-radius: 4px;
+    }
+    a:visited {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      font-weight: bold;
+      padding: 5px 8px;
+      background-color: #0f6184;
+      
+    }
+    .main__primeraLinea {
+      color: #0f6184;
+      font-weight: bolder;
+      text-shadow: 2px 2px 1px black;
+    }
+    .main__segundaLinea {
+      color: white;
+      font-weight: bolder;
+      text-shadow: 1px 1px 3px black;
+      margin-bottom: 10px;
+    }
+    
+  }
+  
+  .imagenes__image {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    .imagenes__textoImagen {
+      @extend .main__textoImagen;
+  
+      .imagenes__primeraLinea {
+        @extend .main__primeraLinea;
+      }
+      .imagenes__segundaLinea {
+        @extend .main__segundaLinea
+      }
+    }
+    
+    img:hover {
+      transform:scale(1.03,1.03);
+      transition: 0.3s;
+    }
+  }
+
+  .separador {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0f6184;
+    border-top: solid 4px white;
+    border-bottom: solid 4px white;
+  }
+  .separador--background {
+    background-image: $fondo;
+  }
+  
+  .carteles {
+    flex-flow: row nowrap;
+    padding-top: 100px;
+  
+  }
+  .carteles--background {
+    background-image: $fondo;
+  }
+  .carteles__cartel--padding {
+    padding-top: 30px;
+  }
+  .carteles__cartel--flexCenter {
+    @extend .headerFixed__nav--flexCenter 
+  }
+  
+  .video--background {
+   background-image: $fondo;
+  }
+  .video__iframe--flexCenter {
+    @extend .headerFixed__nav--flexCenter 
+  }
+  /* FIN INDEX.HTML */

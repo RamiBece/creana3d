@@ -1,0 +1,19 @@
+/* Variables */
+$fondo: linear-gradient(to right, #c2d7e0, #4fbebb);
+
+.bodySobreNosotros {
+    background-image: $fondo;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 50px;
+}
+
+.bodySobreNosotros__tiulo {
+    padding-bottom: 20px;
+    color: #0f6184;
+}
+.bodySobreNosotros__parrafoUno {
+    padding-bottom: 20px;
+}
+
+

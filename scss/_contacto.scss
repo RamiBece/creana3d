@@ -1,0 +1,17 @@
+/* Variables */
+$fondo: linear-gradient(to right, #c2d7e0, #4fbebb);
+
+.contacto {
+    background-image: $fondo;
+
+    h1 {
+        color: #0f6184; ;
+    }
+    h2 {
+        color: #0f6184 ;
+    }
+    ul {
+        line-height: 30px;
+        list-style: none;
+    }
+}

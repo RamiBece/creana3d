@@ -1,0 +1,16 @@
+/* Variables */
+$fondo: linear-gradient(to right, #c2d7e0, #4fbebb);
+
+.cuerpoPiezas {
+    background-image: $fondo;
+
+    .cuerpoPiezas__titulo {
+        text-align: center;
+        color: #0f6184; 
+        font-weight: bold;
+    }
+    p {
+        font-weight: bold;
+        color: black;
+    }
+}
